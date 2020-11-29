@@ -15,6 +15,10 @@ This script opens Tor Browser on ubuntu:
 
     it changes the current working directory to the tor browser directory
     then excutes a command in the shell
+
+    changing the permissions of this file to make it excutable,
+    then from properties/permissions mark the "Allowing executing file as program" option.
+    this will allow you to run the script by double clicking.
 '''
 
 '''
