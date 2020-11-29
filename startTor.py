@@ -10,6 +10,14 @@ print("Done")
 
 
 '''
+This script opens Tor Browser on ubuntu:
+    assuming that tor browser folder is on the desktop
+
+    it changes the current working directory to the tor browser directory
+    then excutes a command in the shell
+'''
+
+'''
 #!/usr/bin/python3:
     this is A shebang line defines where the interpreter is located.
     In this case, the python3 interpreter is located in /usr/bin/python3.
