@@ -29,7 +29,8 @@ def start_timer(study_time, break_time, current_time):
             print(f"\nStart {study_time//60} mins of Studying...\n")
             time.sleep(study_time)
             current_time = 'break'
-            for i in range(7):
+            # _ is a standard placeholder name for ignored members in a for-loop and tuple assignment
+            for _ in range(7):
                 time.sleep(0.5)
                 # running a command in shell, to produce a beep sound
                 subprocess.run(["echo -ne '\\007'"], shell=True)
@@ -37,7 +38,7 @@ def start_timer(study_time, break_time, current_time):
             print(f"\nTake {break_time//60} mins as a Break...\n")
             time.sleep(break_time)
             current_time = 'study'
-            for i in range(7):
+            for _ in range(7):
                 time.sleep(0.5)
                 # running a command in shell, to produce a beep sound
                 subprocess.run(["echo -ne '\\007'"], shell=True)
@@ -53,9 +54,13 @@ def main():
         break_time = take_input('break') * 60
 
         start_timer(study_time, break_time, current_time)
-        
+
     except KeyboardInterrupt:
         print("\nHave Fun..!\n")
 
 
 main()
+
+'''
+A pomodoro clock command line tool 
+'''
